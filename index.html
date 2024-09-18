@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Souza Avaliação</title>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1 class="titulo-cabecalho">SEU GÁS, SUA ÁGUA!</h1>
+        <img class="imagem-cabecalho" src="/imagens/logo.png" alt="Logo souza gás">
+    </header>
+    <section class="formulario">
+        <form class="formulario-principal" data-telefone>
+            <fieldset class="campo_formulario">
+                <label class="campo_etiqueta"  for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone"  class="campo_escrita" maxlength="15 " pattern="\(\d{2}\)\s*\d{5}-\d{4}" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+
+            <fieldset class="formulario_termos">
+                <input class="termos_input" type="checkbox" name="termos" required>
+                <p class="termos_texto">Li e estou ciente quanto às condições de tratamento dos meus dados conforme
+                    descrito na Política
+                    de
+                    <a class="link-politica-privacidade" href="#">Privacidade da empresa.</a></p>
+                    <span class="mensagem-erro"></span>
+            </fieldset>
+
+            <div>
+                <input class="formulario_botao" id="enviar" type="submit" value="Avançar">
+                <span class="mensagem-erro"></span>
+            </div>
+        </form>
+    </section>
+    <script src="/js/script.js"></script>
+</body>
+</html>

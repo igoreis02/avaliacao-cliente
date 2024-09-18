@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+:root{
+    --amarelo-principal: #cc8d1a; 
+    --branco: #ffffff;
+    --verde :#164c45;
+    --fonte: "Archivo Black";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-image: url('/imagens/fundo.png');
+    background-repeat: no-repeat;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titulo-cabecalho {
+    margin-top: 2em;
+    font-family: var(--fonte), sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: var(--branco);
+    text-shadow: 2px 2px var(--amarelo-principal);
+}
+
+.imagem-cabecalho {
+    width: 200px;
+    height: auto;
+    margin: -42px auto 0 auto;
+}
+
+.formulario{
+    margin: 1em auto;
+    width:  30vw;
+}
+
+.formulario_termos{
+   width: 75%;
+    
+}
+
+.formulario-principal{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.campo_formulario{
+    width: 50%;
+    margin-right: 40px;
+}
+
+.campo_etiqueta{
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--branco);
+    font-size: 30px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 2px var(--amarelo-principal);
+    margin-left: 1em;
+}
+
+.campo_escrita{
+    display: block;
+    width: 100%;
+    border: 2px solid var(--amarelo-principal);
+    border-radius: 20px;
+    padding: 1em;
+    margin-top: .5em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 17px;
+}
+
+.campo_escrita-quadra-lote{
+    display: block;
+    width: 100%;
+    border: 2px solid var(--amarelo-principal);
+    border-radius: 20px;
+    padding: 1em;
+    margin-top: .5em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 17px;
+}
+
+.link-politica-privacidade{
+    color: var(--amarelo-principal);
+}
+
+.termos_texto{
+    display: inline;
+    color: var(--branco);
+    line-height: 20px;
+    margin-right: 0;
+}
+
+.formulario_botao{
+    margin: 2em;
+    background-color: var(--amarelo-principal);
+    font-family: var(--fonte), sans-serif;
+    padding: 1em 2em;
+    color: var(--branco);
+    font-size: 20px;
+    border-radius: 20px;
+
+}
+
+.container-quadra-lote{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.campo_formulario-quadra-lote{
+    
+}
+
+.campo_formulario-cadastro{
+    width: 100%;
+}

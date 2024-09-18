@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Souza Cadastro</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <h1 class="titulo-cabecalho">SEU GÁS, SUA ÁGUA!</h1>
+        <img class="imagem-cabecalho" src="/imagens/logo.png" alt="Logo souza gás">
+    </header>
+    <section class="formulario"  >
+        <form class="formulario-principal" data-cadastro-total>
+            <fieldset class="campo_formulario-cadastro">
+                <label class="campo_etiqueta nome" for="telefone">Nome</label>
+                <input type="text" name="nome" id="nome" class="campo_escrita" minlength="3" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+
+            <fieldset class="campo_formulario-cadastro">
+                <label class="campo_etiqueta" for="rua">Rua</label>
+                <input type="text" name="rua" id="rua" class="campo_escrita" minlength="3" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+
+            <div class="container-quadra-lote">
+                <fieldset class="campo_formulario-quadra-lote">
+                    <label class="campo_etiqueta" for="quadra">Quadra</label>
+                    <input type="number" name="quadra" id="quadra" class="campo_escrita-quadra-lote" minlength="1"
+                        required>
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+
+                <fieldset class="campo_formulario-quadra-lote">
+                    <label class="campo_etiqueta" for="lote">Lote</label>
+                    <input type="number" name="lote" id="lote" class="campo_escrita-quadra-lote" minlength="1" required>
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+            </div>
+
+            <fieldset class="campo_formulario-cadastro">
+                <label class="campo_etiqueta" for="setor">Setor</label>
+                <input type="text" name="setor" id="setor" class="campo_escrita" minlength="3" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+
+            <fieldset class="campo_formulario-cadastro">
+                <label class="campo_etiqueta" for="dtNascimento">Data de nascimento</label>
+                <input type="date" name="dtNascimento" id="dtNascimento" class="campo_escrita" minlength="3" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+
+            <div>
+                <input class="formulario_botao" id="enviar" type="submit" value="Avançar">
+                <span class="mensagem-erro"></span>
+            </div>
+        </form>
+    </section>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
